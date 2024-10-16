@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện sách, truyện</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <style>
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Màu nền chính */
+    color: #fff; /* Màu chữ chính */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #555; /* Màu nền thanh tìm kiếm */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #666; /* Màu nền ô nhập liệu */
+    color: #fff; /* Màu chữ ô nhập liệu */
+}
+
+.search-bar input::placeholder {
+    color: #ccc; /* Màu chữ gợi ý trong ô nhập liệu */
+}
+
+.settings-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc; /* Màu của biểu tượng bánh răng */
+}
+
+.main-display {
+    background-color: #777; /* Màu nền của khu vực ảnh bìa */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #8fff00; /* Viền màu xanh lá */
+}
+
+.recommend-section h3 {
+    color: #ff8040;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.book-item {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #444; /* Màu nền của khối sách */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-cover {
+    width: 100px;
+    height: 150px;
+    background-color: #888; /* Màu nền của ảnh bìa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #ddd;
+    margin-right: 15px;
+}
+
+.book-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; /* Màu chữ tiêu đề */
+}
+
+.book-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc; /* Màu chữ mô tả */
+}
+
+.book-category {
+    font-size: 14px;
+    color: #ff8040;
+    font-weight: bold;
+}
+
+  </style>
+<body>
+    <div class="container">
+        <!-- Thanh tìm kiếm -->
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm tên truyện, tên tác giả....">
+            <span class="settings-icon">&#9881;</span> <!-- Biểu tượng bánh răng -->
+        </div>
+
+        <!-- Khu vực hiển thị ảnh bìa sách, truyện hot -->
+        <div class="main-display">
+            ẢNH BÌA SÁCH, TRUYỆN HOT
+        </div>
+
+        <!-- Khu vực đề cử -->
+        <div class="recommend-section">
+            <h3>ĐỀ CỬ</h3>
+            <div class="book-item">
+                <div class="book-cover">Ảnh bìa</div>
+                <div class="book-info">
+                    <h4>Tên sách, truyện......</h4>
+                    <p>Mô tả cơ bản về sách, truyện....</p>
+                    <span class="book-category">Thể loại sách, truyện chính</span>
+                </div>
+            </div>
+
+            <div class="book-item">
+                <div class="book-cover">Ảnh bìa</div>
+                <div class="book-info">
+                    <h4>Tên sách, truyện......</h4>
+                    <p>Mô tả cơ bản về sách, truyện....</p>
+                    <span class="book-category">Thể loại sách, truyện chính</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
